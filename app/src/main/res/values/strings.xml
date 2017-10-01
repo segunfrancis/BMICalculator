@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="intro1">The body mass index (BMI) is a value derived
+        from the mass (weight) and height of an individual.</string>
+    <string name="intro2">The <b>BMI</b> is an attempt to quantify the amount
+        of tissue mass (muscle, fat, and bone) in an individual, and
+        then categorize that person as underweight, normal weight,
+        overweight, or obese based on that value.</string>
+    <string name="intro3">Do you want to know your BMI?</string>
+    <string name="button1">Proceed</string>
+    <string name="name">Name</string>
+    <string name="weight">Weight (kilograms)</string>
+    <string name="height">Height</string>
+    <string name="check">Check BMI</string>
+    <string-array name="unit">
+        <item>Centimeters</item>
+        <item>Meters</item>
+    </string-array>
+</resources>

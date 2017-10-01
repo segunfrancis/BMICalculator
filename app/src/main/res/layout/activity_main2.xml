@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    tools:context="com.example.android.bmiapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="casual"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:textColor="#888"
+                android:textColorHint="#4CAF50"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="casual"
+                android:hint="@string/weight"
+                android:inputType="numberDecimal"
+                android:textColor="#888"
+                android:textColorHint="#4CAF50"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="casual"
+                    android:hint="@string/height"
+                    android:inputType="numberDecimal"
+                    android:textColor="#888"
+                    android:textColorHint="#4CAF50"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/spinner"
+                    android:layout_gravity="end"
+                    android:entries="@array/unit"
+                    android:textColor="#4CAF50"
+                    android:textSize="20sp"
+                    android:textColorHint="#4CAF50"
+                    android:gravity="top"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/proceed_button"
+            android:layout_alignParentBottom="true"
+            android:background="#C8E6C9"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:onClick="proceed"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/check"
+            android:textAllCaps="true"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
